@@ -1,0 +1,102 @@
+.slider2box {
+    display: block;
+    width: 1200px;
+    height: 420px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider2content {
+    overflow: hidden;
+    display: block;
+    width: 1100px;
+    height: 420px;
+    float: left;
+    position: relative;
+}
+
+.leftspear2 {
+    display: block;
+    float: left;
+    height: 400px;
+    width: 50px;
+}
+
+.leftspear2 img {
+    display: block;
+    transform: rotate(180deg);
+    margin-top: 90px;
+}
+
+.rightspear2 {
+    display: block;
+    float: left;
+    height: 400px;
+    width: 50px;
+}
+
+.rightspear2 img {
+    margin-top: 90px;
+    display: block;
+    margin-left: 20px;
+}
+
+.s2box {
+    display: block;
+    height: 420px;
+    width: 350px;
+    margin-top: 15px;
+    float: left;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.s2box img {
+    height: 200px;
+    width: 350px;
+    float: left;
+}
+
+.bb2,
+.bb3,
+.bb4,
+.bb5 {
+    margin-left: 25px;
+}
+
+.s2box h2,
+.s2box p {
+    display: block;
+    text-align: left;
+    float: left;
+    color: #4f4f4f;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.plusicon {
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 125px solid transparent;
+    border-left: 115px solid transparent;
+    border-top: 125px solid #373737;
+    position: absolute;
+    transform: rotate(-135deg);
+    left: 275px;
+    top: -25px;
+}
+
+.container_slide2 {
+    -webkit-transition: all .2s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    display: block;
+    width: 1850px;
+    height: 420px;
+    float: left;
+    overflow: hidden;
+}
+

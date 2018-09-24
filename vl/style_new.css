@@ -1,0 +1,151 @@
+
+.container_n {
+	width: 1300px;
+	padding:0 100px 0 100px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.news_list {
+	width: 725px;
+	position: absolute;
+
+}
+
+.news {
+	width: 725px;
+	height: 170px;
+	background: white;
+
+}
+
+.two,.three,.four,.five,.six,.seven {
+	margin-top: 13px;
+
+}
+
+.three {
+	height: 98px;
+}
+
+.four,.five,.six,.seven {
+	height: 77px;
+}
+
+.news,.two,.three,.four,.five,.six,.seven {
+	box-shadow: 0 1px 11px rgba(0,0,0,.25); 
+
+}
+
+/*********************************************************/
+
+
+.stick {
+	width: 5px;
+	height: 170px;
+	background: #f26c4f;
+	position: absolute;
+}
+
+.s_three {
+	background: #8f8f8f;
+	height: 98px;
+}
+
+.s_four,.s_five,.s_six,.s_seven {
+	height: 77px;
+	background: #8f8f8f;
+}
+.s_five,.s_six,.s_seven {
+	background: #d9d9d9;
+}
+
+.text_news{
+	padding-top: 30px;
+}
+
+.text_news_four,.text_news_five,.text_news_six,.text_news_seven{
+	padding-top: 15px;
+}
+
+.h2-news {
+	font-size: 18pt;
+	color: #474747;
+	margin-left: 40px;
+}
+
+.h2-news-four,.h2-news-five,.h2-news-six,.h2-news-seven {
+	font-size: 13pt;
+}
+
+.news_p {
+	display: inline;
+	margin-left: 40px;
+	color: #b4b4b4;
+	font-size: 10pt;
+	font-style: italic;
+}
+
+.t {
+	display: block;
+	font-style: normal;
+	margin-top: 23px;
+}
+
+.plus {
+	margin: 30px auto;
+	width: 114px;
+
+}
+
+
+.plus p {
+	color: #bdbdbd;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+.plus_img {
+	background: url(../pictures/plus.png);
+	width: 19px;
+	height: 20px;
+	margin: 2px 0 0 36px ;
+}
+
+/***************************************************************************************/
+.sidebar {
+	float: right;
+}
+
+.s_box {
+	background: #373737;
+	width: 350px;
+	height: 581px;
+	overflow: hidden;
+}
+
+.sidebar_img {
+	background: url(../pictures/sidebar.png);
+	width: 497px;
+	height: 302px;
+	position: relative;
+	right: 125px;
+}
+
+.text_sidebar  {
+	color: white;
+	padding: 24px 40px 0px 30px;
+	line-height: 26px;
+}
+
+.text_sidebar h3 {
+	font-size: 19pt;
+	font-family: nexa regular;
+}
+
+.text_sidebar p {
+	margin-top: 20px;
+	font-family: arial regular;
+	font-size: 12pt;
+}

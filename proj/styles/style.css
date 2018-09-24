@@ -1,0 +1,248 @@
+.choose_news, .choose_contact {
+  background: #fff;
+  margin-top: 20px;
+  float: left;
+  height: 40px;
+}
+
+.choose_news .arrows, .choose_contact .arrows {
+  width: 40px;
+  height: 40px;
+  background: #ebebeb;
+  float: right;
+}
+
+.choose_news .icons_of_news, .choose_contact .icons_of_contact {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.choose_news {
+  width: 200px;
+}
+
+.choose_news .icons_of_news {
+  background: url(../pictures/map_pin.jpg) center no-repeat;
+  background-size: 13px;
+}
+
+.choose_news .arrows .image_arrows {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../pictures/arrow_image.png) center no-repeat;
+}
+
+.choose_news .main_of_window_news {
+  width: 120px;
+  height: 40px;
+  float: left;
+}
+
+.choose_news .main_of_window_news span {
+  color: #959595;
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+}
+
+.choose_contact {
+  margin-left: 18px;
+  width: 170px;
+}
+
+.choose_contact .icons_of_contact {
+  background: url(../pictures/clock.png) center no-repeat;
+  background-size: 19px;
+}
+
+.choose_contact .arrows .image_arrows {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../pictures/arrow_image.png) center no-repeat;
+}
+
+.choose_contact .main_of_window_contact {
+  width: 70px;
+  height: 40px;
+  float: left;
+}
+
+.choose_contact .main_of_window_contact span {
+  color: #959595;
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+}
+
+.arDW {
+  transform: rotate(-90deg);
+}
+
+.arTP {
+  transform: rotate(90deg);
+}
+
+.navigation_container {
+  display: block;
+  width: 1200px;
+  height: 80px;
+  background: #474747;
+  margin: auto;
+}
+
+.navigation_container .left_icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.navigation_container .left_icon .icon_nav_container {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  background: url(../pictures/map_no_color.png) center no-repeat;
+  background-size: 15px;
+}
+
+.center_nav {
+  display: block;
+  width: 650px;
+  height: 80px;
+  float: left;
+}
+
+.center_nav .nav_ul {
+  display: block;
+  width: 700px;
+  height: 30px;
+  list-style-type: none;
+  float: left;
+  margin-top: 25px;
+}
+
+.center_nav .nav_ul .mNav1 span {
+  border-left: none;
+}
+
+.center_nav .nav_ul li {
+  text-align: center;
+  width: 75px;
+  height: 30px;
+  float: left;
+}
+
+.center_nav .nav_ul li span {
+  color: #e2e2e2;
+  margin-top: 5px;
+  display: inline-block;
+  width: inherit;
+  border-left: 1px solid #767676;
+}
+
+.center_nav .nav_ul .mNav1 {
+  width: 100px;
+}
+
+.center_nav .nav_ul .mNav2 {
+  width: 100px;
+}
+
+.center_nav .nav_ul .mNav4 {
+  width: 100px;
+}
+
+.center_nav .nav_ul .mNav5 {
+  width: 100px;
+}
+
+.right_nav {
+  display: block;
+  width: 470px;
+  height: 80px;
+  float: left;
+}
+
+.right_nav .wrap_quicklinks {
+  display: block;
+  width: 235px;
+  height: 80px;
+  float: left;
+  margin-left: 50px;
+}
+
+.right_nav .wrap_quicklinks .quicklinks {
+  display: block;
+  width: 175px;
+  height: 80px;
+  float: left;
+}
+
+.right_nav .wrap_quicklinks .quicklinks p {
+  color: #c6c6c6;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.right_nav .wrap_quicklinks .icon_quicklinks {
+  display: block;
+  width: 60px;
+  height: 80px;
+  float: left;
+}
+
+.right_nav .wrap_quicklinks .icon_quicklinks span {
+  display: block;
+  margin-top: 25px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background: url(../pictures/map_no_color.png) left no-repeat;
+  background-size: 15px;
+  border-right: 1px solid #767676;
+}
+
+.right_nav .wrap_select_from_dropdown {
+  display: block;
+  width: 185px;
+  height: 80px;
+  float: left;
+}
+
+.right_nav .wrap_select_from_dropdown .select_from_dropdown {
+  display: block;
+  width: 155px;
+  height: 80px;
+  float: left;
+}
+
+.right_nav .wrap_select_from_dropdown .select_from_dropdown .main_select_dropdown {
+  display: block;
+  width: 155px;
+  height: 20px;
+  margin-top: 30px;
+  float: left;
+  color: #e2e2e2;
+}
+
+.right_nav .wrap_select_from_dropdown .arrows_select_from_dropdown {
+  display: block;
+  width: 30px;
+  height: 80px;
+  float: left;
+}
+
+.right_nav .wrap_select_from_dropdown .arrows_select_from_dropdown span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../pictures/arrows.png) center no-repeat;
+  background-size: 20px;
+  margin-top: 25px;
+}

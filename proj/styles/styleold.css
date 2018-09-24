@@ -1,0 +1,93 @@
+*{box-sizing:border-box;}
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: Nexa;
+	background-color:#ebebeb;
+}
+.top-flex {
+	width:100%;
+	height: 80px;
+	background-color:#373737;
+}
+
+.header  {
+	width:1200px;
+	height: inherit;
+	margin: auto;
+	background-color:#373737;
+}
+
+.logo {
+	width: 35%;
+	float: left;
+	height: inherit;
+}
+
+.letterG {
+	position: relative;
+	float: left;
+	width:80px;
+	height: 80px;
+	background: #f26c4f;
+}
+
+.letterG span {
+	display: block;
+	margin:auto;
+	margin-top: 20px;
+	width:40px;
+	height: 40px;
+	background: url(../pictures/g.png) center no-repeat;
+}
+
+.arrowG {
+	position: absolute;
+	width:0;
+	height: 0;
+	border-bottom: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-left: 20px solid #f26c4f;
+	left:80px;
+	top:20px;
+}
+
+.goodInc {
+	float: left;
+	width:100px;
+	height: inherit;
+	margin-left: 20px;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 80px;
+	text-align: center;
+	color:#d6d6d6;
+}
+
+.topNavRight {
+	width:65%;
+	float: left;
+	height: inherit;
+}
+
+.WindowWrap {
+	float: right;
+	width:60%;
+	height: inherit;
+}
+
+.NewsletterBox { 
+	float: left;
+	width:59%;
+	height:inherit;
+}
+
+.ContactBox { 
+	float:left;
+	width:41%;
+	height: inherit;
+}

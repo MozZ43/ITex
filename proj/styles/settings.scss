@@ -1,0 +1,9 @@
+@mixin base ($display,$width,$height) {
+	display:$display;
+	width:$width+px;
+	height:$height+px;
+}
+
+$main_color : #e2e2e2;
+
+$main_font : Nexa;

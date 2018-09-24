@@ -1,0 +1,212 @@
+@import "settings.scss";
+
+%choosing_top{
+	background: #fff;
+	margin-top: 20px;
+	float: left;
+	height: 40px;
+}
+
+%arrows{
+	width:40px;
+	height: 40px;
+	background: #ebebeb;
+	float: right;
+}
+
+%img_of_arrow {
+	float: left;
+	display: block;
+	width:20px;
+	height: 20px;
+	background:url(../pictures/direction196.png) center no-repeat;
+	background-size:contain;
+	margin-left: 10px;
+}
+
+%icons_window_left {
+	display: block;
+	width:40px;
+	height:40px;
+	float: left;
+}
+
+.choose_news {
+	width:200px;
+	@extend %choosing_top;
+		.icons_of_news {
+			@extend %icons_window_left;
+			background:url(../pictures/map_pin.jpg) center no-repeat;
+			background-size:13px;
+		}
+		.arrows {
+			@extend %arrows;
+				.image_arrows {
+					@include base(block,40,40);
+					background:url(../pictures/arrow_image.png) center no-repeat;
+				}
+		}
+		.main_of_window_news {
+			width:120px;
+			height: 40px;
+			float: left;
+				span {
+					color:#959595;
+					text-align: center;
+					margin-top: 10px;
+					float: left;
+				}
+		}
+}
+
+.choose_contact {
+	margin-left: 18px;
+	width:170px;
+	@extend %choosing_top;
+		.icons_of_contact {
+			@extend %icons_window_left;
+			background:url(../pictures/clock.png) center no-repeat;
+			background-size:19px;
+		}
+		.arrows {
+			@extend %arrows;
+				.image_arrows {
+					@include base(block,40,40);
+					background:url(../pictures/arrow_image.png) center no-repeat;
+				}	
+		}
+		.main_of_window_contact {
+			width:70px;
+			height: 40px;
+			float: left;
+				span {
+					color:#959595;
+					text-align: center;
+					margin-top: 10px;
+					float: left;
+				}
+
+		}
+}
+
+.arDW {
+	transform:rotate(-90deg);
+}
+
+.arTP {
+	transform:rotate(90deg);
+}
+
+.navigation_container {
+	@include base(block,1200,80);
+	background:#474747;
+	margin:auto;
+		.left_icon {
+			@include base (block,80,80);
+			float: left;
+				.icon_nav_container {
+					display: block;
+					margin: auto;
+					margin-top: 15px;
+					width:40px;
+					height: 40px;
+					background:url(../pictures/map_no_color.png) center no-repeat;
+					background-size:15px;
+				}
+		}
+
+}
+
+$each_for_nav_ul : 1,2,4,5;
+
+.center_nav {
+	@include base(block,650,80);
+	float: left;
+		.nav_ul {
+			@include base(block,700,30);
+			list-style-type:none;
+			float: left;
+			margin-top: 25px;
+				.mNav1 span {
+					border-left:none;
+				}
+				li {
+					text-align: center;
+					width:75px;
+					height: 30px;
+					float: left;					
+						span {
+							color:#e2e2e2;
+							margin-top: 5px;
+							display: inline-block;
+							width:inherit;
+							border-left: 1px solid #767676;
+						}
+				}
+				@each $number in $each_for_nav_ul {
+						.mNav#{$number} {
+						width:100px;
+					}
+				}
+		}
+}
+
+.right_nav {
+	@include base(block,470,80);
+	float: left;
+		.wrap_quicklinks {
+			@include base(block,235,80);
+			float: left;
+			margin-left: 50px;
+				.quicklinks{
+					@include base(block,175,80);
+					float: left;
+						p {
+							color:#c6c6c6;
+							text-align: right;
+							margin-top: 30px;
+						}
+				}
+				.icon_quicklinks  {
+					@include base(block,60,80);
+					float: left;
+					 span {
+						display: block;
+						margin-top: 25px;
+						width:30px;
+						height: 30px;
+						margin-left: 10px;
+						background:url(../pictures/map_no_color.png) left no-repeat;
+						background-size:15px;
+						border-right:1px solid #767676;
+					 }
+				}
+		}
+
+		.wrap_select_from_dropdown {
+			@include base(block,185,80);
+			float: left;
+				.select_from_dropdown {
+					@include base(block,155,80);
+					float: left;
+						.main_select_dropdown {
+							@include base(block,155,20);
+							margin-top: 30px;
+							float: left;
+							color:$main_color;
+						}
+				}
+				.arrows_select_from_dropdown {
+					@include base(block,30,80);
+					float: left;
+						span {
+							@include base(block,30,30);
+							background:url(../pictures/arrows.png) center no-repeat;
+							background-size:20px;
+							margin-top: 25px;
+						}
+				}
+		}
+}
+
+

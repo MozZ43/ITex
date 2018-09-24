@@ -1,0 +1,350 @@
+@import "settings.scss";
+.container {
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    background: #474747;
+}
+
+
+/*3 БЛОК СВЕРХУ */
+
+.cache_img {
+    display: none;
+}
+
+.added_box {
+    @include base(block, 1200, 80);
+    margin: auto;
+    .wrap_all_3box {
+        @include base (block, 1200, 50);
+        margin-top: 15px;
+        float: left;
+        .left_3box {
+            @include base(block, 860, 50);
+            float: left;
+            .wrap_search_findy {
+                @include base(block, 460, 50);
+                float: left;
+                .wrap_search {
+                    @include base(block, 295, 50);
+                    float: left;
+                    background: #fff;
+                    box-shadow: 1px 1px 3px #ccc;
+                    .wrap_input {
+                        @include base(block, 225, 40);
+                        float: left;
+                        margin-top: 5px;
+                        margin-left: 20px;
+                        input[type='text'] {
+                            font-size: 15px;
+                            color: #959595;
+                            width: 225px;
+                            height: 40px;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                        }
+                    }
+                    span {
+                        @include base(block, 50, 50);
+                        float: left;
+                        background: url(../pictures/clock_big.png) center no-repeat;
+                    }
+                }
+                .wrap_findy {
+                    @include base(block, 150, 50);
+                    float: left;
+                    margin-left: 15px;
+                    background: #fff;
+                    box-shadow: 2px 2px 3px #ccc;
+                    .left_icon {
+                        @include base(block, 30, 50);
+                        float: left;
+                        span {
+                            @include base(block, 30, 50);
+                            background: url(../pictures/map_pin_black.png) no-repeat center;
+                        }
+                    }
+                    .main_findy {
+                        @include base (block, 70, 50);
+                        float: left;
+                        span {
+                            text-align: left;
+                            margin-top: 16px;
+                            float: left;
+                            color: #959595;
+                            display: block;
+                        }
+                    }
+                    .right_icon {
+                        @include base(block, 50, 50);
+                        float: left;
+                        background: #8f8f8f;
+                        span {
+                            @include base(block, 50, 50);
+                            background: url(../pictures/arrow_image2.png) no-repeat center;
+                        }
+                    }
+                }
+            }
+        }
+        .right_3box {
+            @include base(block, 340, 50);
+            float: left;
+            font-family: Arial;
+            .logos {
+                height: 50px;
+                float: left;
+                @for $i from 1 through 4 {
+                    .Log#{$i} {
+                        @include base(block, 20, 50);
+                        background:url(../pictures/Logo#{$i}.png) center no-repeat;
+                        float: left;
+                    }
+                }
+            }
+            .Twitter {
+                width: 75px;
+                margin-left: 50px;
+            }
+            .Facebook {
+                width: 95px;
+            }
+            .RSS {
+                width: 60px;
+            }
+            .Mail {
+                width: 60px;
+            }
+            span:nth-of-type(2) {
+                display: block;
+                width: 35px;
+                margin-top: 16px;
+                float: left;
+                margin-left: 1px;
+                color: #8f8f8f;
+            }
+        }
+    }
+}
+
+
+/*ДВА СЛАЙДЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
+*/
+
+.main_first {
+    @include base(block, 1300, 800);
+    margin: auto;
+    .nav_news {
+        @include base(block, 1200, 450);
+        margin: auto;
+        overflow: hidden;
+        transition: all .8s ease;
+        .pic_of_news {
+            overflow: hidden;
+            @include base(block, 835, 450);
+            float: left;
+            background: black;
+            transition: all .8s ease;
+            .pic_and_desc_of_pic {
+                width: inherit;
+                height: inherit;
+                position: relative;
+            }
+            img {
+                float: left;
+                width: inherit;
+                height: inherit;
+            }
+            .description_picture {
+                width: 360px;
+                height: 70px;
+                position: absolute;
+                background: rgba(0, 0, 0, .4);
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+                span {
+                    color: #fff;
+                    opacity: .8;
+                    font-size: 16px;
+                    margin-top: 25px;
+                    float: left;
+                    margin-left: 35px;
+                }
+            }
+        }
+        .wrap_arrow_news {
+            @include base(block, 365, 450);
+            background: #373737;
+            float: left;
+            position: relative;
+            .add_info_pic {
+                position: absolute;
+                @include base(block, 10, 450);
+                background: #f26c4f;
+                z-index: 1;
+                transition: all .2s ease;
+                .arrow_red {
+                    @include base(block, 0, 0);
+                    border-left: 25px solid #f26c4f;
+                    border-top: 25px solid transparent;
+                    border-bottom: 25px solid transparent;
+                    margin-top: 40px;
+                }
+            }
+            .description_news {
+                @include base (block, 355, 450);
+                margin-left: 10px;
+                float: left;
+                .placeholder_text {
+                    @include base(block, 290, 450);
+                    margin: auto;
+                    h4 {
+                        float: left;
+                        margin-top: 50px;
+                        font-size: 25px;
+                        color: #d6d6d6;
+                        text-align: left;
+                        height: 100px;
+                    }
+                    p {
+                        float: left;
+                        margin-top: 10px;
+                        text-align: left;
+                        opacity: .7;
+                        color: #a1a1a1;
+                        height: 150px;
+                        line-height: 22px;
+                    }
+                    .add_date {
+                        @include base(block, 290, 30);
+                        float: left;
+                        margin-top: 30px;
+                        .add_button {
+                            @include base(block, 30, 30);
+                            float: left;
+                            span {
+                                @include base (block, 30, 30);
+                                background: url(../pictures/plus_icon.png) center no-repeat;
+                            }
+                        }
+                        .date {
+                            @include base(block, 150, 30);
+                            float: right;
+                            .icon_date {
+                                float: left;
+                                @include base(block, 30, 30);
+                                background: url(../pictures/clock_black.png) center no-repeat;
+                            }
+                            .date_text {
+                                opacity: .7;
+                                color: #a1a1a1;
+                                float: left;
+                                width: 100px;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                    .nav_button_news {
+                        @include base(block, 80, 40);
+                        float: left;
+                        margin-top: 40px;
+                        margin-left: 242.5px;
+                        .L_arrow_news {
+                            @include base(block, 40, 40);
+                            background-color: #474747;
+                            transition: all .2s ease;
+                            float: left;
+                            &:hover {
+                                background-color: #535353;
+                            }
+                            span {
+                                @include base(block, 40, 40);
+                                background: url(../pictures/arrow_news.png) center no-repeat;
+                            }
+                        }
+                        .R_arrow_news {
+                            @include base(block, 40, 40);
+                            float: left;
+                            background-color: #474747;
+                            transition: all .2s ease;
+                            &:hover {
+                                background-color: #535353;
+                            }
+                            span {
+                                @include base(block, 40, 40);
+                                background: url(../pictures/arrow_news_copy.png) center no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//АНИМАЦИИ СЛАЙДЕР КАРТИНКА И ДЕСК
+@keyframes animationSlider {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -900px;
+    }
+}
+
+@keyframes animationSliderTwo {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 835px;
+    }
+}
+
+@keyframes posleft {
+    from {
+        left: -835px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes descboxright {
+    from {
+        right: 0;
+    }
+    to {
+        right: 900px;
+    }
+}
+
+@keyframes todescboxright {
+    from {
+        right: -360px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes descboxleft {
+    from {
+        right: 0;
+    }
+    to {
+        right: -360px;
+    }
+}
+
+@keyframes todescboxleft {
+    from {
+        right: 900px;
+    }
+    to {
+        right: 0;
+    }
+}
